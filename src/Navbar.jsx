@@ -2,6 +2,13 @@ import './Nav.css';
 import { CiLinkedin } from "react-icons/ci";
 import { FaBehanceSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { FaHtml5  } from 'react-icons/fa';
+import { IoLogoCss3 } from "react-icons/io5"
+import { IoLogoJavascript } from "react-icons/io";
+import { FaPhp } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import { FaLaravel } from "react-icons/fa";
+
 
 function Navbar(){
     return(
@@ -28,14 +35,24 @@ function Navbar(){
                 </div>
             </div>
           <div className='about_skill'>
-            <div> Worked With</div>
+            <h3> My Skills</h3>
 
           </div>
+
+          <div className='skill_container'>
+                <div><span><FaHtml5 size={30}/></span></div>
+                <div><span><IoLogoCss3 size={30}/></span></div>
+                <div><span><IoLogoJavascript size={30}/></span></div>
+                <div><span><FaPhp size={50}/></span></div>
+                <div><span><SiMysql size={50} /></span></div>
+                <div><span><FaLaravel size={30}/></span></div>
+            </div>
         </div>
+
         
         
-        </>
+        </> 
     )
-}
+} 
 
 export default Navbar;
